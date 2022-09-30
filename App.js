@@ -1,21 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
-
-// Criei a função (componente) "User" que terá como como prop o nome do usuário, e esse componente será chamado no componete "App"
-
-function User(props) {
-  return (<h1>Olá, Meu nome é {props.name} e estou aprendendo React. Quer aprender também, segue o link abaixo!</h1>
-  ) 
-}
+import Count from './count'
 
 function App() {
+  
+  let text = 'Learn React'
+  
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <User name={"Wagner"}></User>                  
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -25,6 +21,9 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+          <Count />
+        </div>
       </header>
     </div>
   );
