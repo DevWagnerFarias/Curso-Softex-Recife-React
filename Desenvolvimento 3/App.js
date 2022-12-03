@@ -1,3 +1,5 @@
+//Enunciado: No projeto base, criado no Peer Tutoring 1, crie um componente principal e um componente react.
+
 import logo from './logo.svg';
 import './App.css';
 import React, {useState, useEffect} from 'react';
